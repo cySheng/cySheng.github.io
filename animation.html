@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    div {
+        position: absolute;
+        
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 2s;
+        /*animation-timing-function: linear ;*/
+        /*animation-delay: 0s;*/
+        animation-iteration-count: infinite;
+
+
+        /*margin-left: 100%;*/
+        left: -100px;
+        animation-direction: alternate;
+        /*animation-fill-mode: backwards; /* how/where it stops */
+
+        /*animation-play-state: play ; This is most likely used in javascript */
+    }
+
+     /*Standard syntax */
+/*    @keyframes example {
+        from {
+            background-color: red;
+        }
+        to {
+            background-color: blue;
+        }
+    }*/
+
+    @keyframes example {
+        100% {
+            width: 200px;
+            background-color: blue;
+            margin-left: 0%;
+            /*right: 0px;
+            /*left: 0px;*/
+        }
+    }
+</style>
+</head>
+<body>
+
+
+<div></div>
+
+
+</body>
+</html>
